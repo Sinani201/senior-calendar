@@ -1,0 +1,13 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.fillin {
+	font-size: x-large;
+}
+
+.date {
+	font-weight: bold;
+}
