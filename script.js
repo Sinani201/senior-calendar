@@ -1,15 +1,15 @@
 window.onload = function() {
-	var now = Date.now();
-	var adates = [new Date(2015, 1, 30), new Date(2015, 2, 2), new Date(2015, 2, 4), new Date(2015, 2, 9), new Date(2015, 2, 11), new Date(2015, 2, 13), new Date(2015, 2, 18), new Date(2015, 2, 23), new Date(2015, 2, 25), new Date(2015, 3, 2), new Date(2015, 3, 4), new Date(2015, 3, 6), new Date(2015, 3, 11), new Date(2015, 3, 16), new Date(2015, 3, 18), new Date(2015, 3, 20), new Date(2015, 3, 23), new Date(2015, 3, 25)];
+	var now = new Date();
+	var adates = [new Date(2015, 0, 30), new Date(2015, 1, 2), new Date(2015, 1, 4), new Date(2015, 1, 9), new Date(2015, 1, 11), new Date(2015, 1, 13), new Date(2015, 1, 18), new Date(2015, 1, 23), new Date(2015, 1, 25), new Date(2015, 2, 2), new Date(2015, 2, 4), new Date(2015, 2, 6), new Date(2015, 2, 11), new Date(2015, 2, 16), new Date(2015, 2, 18), new Date(2015, 2, 20), new Date(2015, 2, 23), new Date(2015, 2, 25)];
 
-	var bdates = [new Date(2015, 1, 29), new Date(2015, 2, 3), new Date(2015, 2, 5), new Date(2015, 2, 6), new Date(2015, 2, 10), new Date(2015, 2, 12), new Date(2015, 2, 17), new Date(2015, 2, 19), new Date(2015, 2, 24), new Date(2015, 2, 26), new Date(2015, 2, 27), new Date(2015, 3, 3), new Date(2015, 3, 5), new Date(2015, 3, 10), new Date(2015, 3, 12), new Date(2015, 3, 13), new Date(2015, 3, 17), new Date(2015, 3, 19), new Date(2015, 3, 24), new Date(2015, 3, 26), new Date(2015, 3, 27)];
+	var bdates = [new Date(2015, 0, 29), new Date(2015, 1, 3), new Date(2015, 1, 5), new Date(2015, 1, 6), new Date(2015, 1, 10), new Date(2015, 1, 12), new Date(2015, 1, 17), new Date(2015, 1, 19), new Date(2015, 1, 24), new Date(2015, 1, 26), new Date(2015, 1, 27), new Date(2015, 2, 3), new Date(2015, 2, 5), new Date(2015, 2, 10), new Date(2015, 2, 12), new Date(2015, 2, 13), new Date(2015, 2, 17), new Date(2015, 2, 19), new Date(2015, 2, 24), new Date(2015, 2, 26), new Date(2015, 2, 27)];
 
-	var adatesap = [new Date(2015, 4, 13), new Date(2015, 4, 15), new Date(2015, 4, 17), new Date(2015, 4, 20), new Date(2015, 4, 22), new Date(2015, 4, 27), new Date(2015, 4, 29), new Date(2015, 5, 1), new Date(2015, 5, 4), new Date(2015, 5, 6)];
+	var adatesap = [new Date(2015, 3, 13), new Date(2015, 3, 15), new Date(2015, 3, 17), new Date(2015, 3, 20), new Date(2015, 3, 22), new Date(2015, 3, 27), new Date(2015, 3, 29), new Date(2015, 4, 1), new Date(2015, 4, 4), new Date(2015, 4, 6)];
 
-	var bdatesap = [new Date(2015, 4, 14), new Date(2015, 4, 16), new Date(2015, 4, 21), new Date(2015, 4, 23), new Date(2015, 4, 24), new Date(2015, 4, 28), new Date(2015, 4, 30), new Date(2015, 5, 5), new Date(2015, 5, 7), new Date(2015, 5, 8)];
+	var bdatesap = [new Date(2015, 3, 14), new Date(2015, 3, 16), new Date(2015, 3, 21), new Date(2015, 3, 23), new Date(2015, 3, 24), new Date(2015, 3, 28), new Date(2015, 3, 30), new Date(2015, 4, 5), new Date(2015, 4, 7), new Date(2015, 4, 8)];
 
-	springbreak = new Date(2015, 3, 27);
-	apday = new Date(2015, 5, 8);
+	springbreak = new Date(2015, 2, 27);
+	apday = new Date(2015, 4, 8);
 
 	var adaysleft = 0;
 	for (var i = 0; i < adates.length; i++) {
