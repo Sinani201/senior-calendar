@@ -4,9 +4,9 @@ window.onload = function() {
 
 	var bdates = [new Date(2015, 0, 29), new Date(2015, 1, 3), new Date(2015, 1, 5), new Date(2015, 1, 6), new Date(2015, 1, 10), new Date(2015, 1, 12), new Date(2015, 1, 17), new Date(2015, 1, 19), new Date(2015, 1, 24), new Date(2015, 1, 26), new Date(2015, 1, 27), new Date(2015, 2, 3), new Date(2015, 2, 5), new Date(2015, 2, 10), new Date(2015, 2, 12), new Date(2015, 2, 13), new Date(2015, 2, 17), new Date(2015, 2, 19), new Date(2015, 2, 24), new Date(2015, 2, 26), new Date(2015, 2, 27)];
 
-	var adatesap = [new Date(2015, 3, 13), new Date(2015, 3, 15), new Date(2015, 3, 17), new Date(2015, 3, 20), new Date(2015, 3, 22), new Date(2015, 3, 27), new Date(2015, 3, 29), new Date(2015, 4, 1), new Date(2015, 4, 4), new Date(2015, 4, 6)];
+	var adatesap = [new Date(2015, 3, 13), new Date(2015, 3, 15), new Date(2015, 3, 17), new Date(2015, 3, 20), new Date(2015, 3, 22), new Date(2015, 3, 27), new Date(2015, 3, 29), new Date(2015, 4, 1)];
 
-	var bdatesap = [new Date(2015, 3, 14), new Date(2015, 3, 16), new Date(2015, 3, 21), new Date(2015, 3, 23), new Date(2015, 3, 24), new Date(2015, 3, 28), new Date(2015, 3, 30), new Date(2015, 4, 5), new Date(2015, 4, 7), new Date(2015, 4, 8)];
+	var bdatesap = [new Date(2015, 3, 14), new Date(2015, 3, 16), new Date(2015, 3, 21), new Date(2015, 3, 23), new Date(2015, 3, 24), new Date(2015, 3, 28), new Date(2015, 3, 30)];
 
 	springbreak = new Date(2015, 2, 27);
 	apday = new Date(2015, 4, 8);
