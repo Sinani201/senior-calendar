@@ -8,8 +8,13 @@ window.onload = function() {
 
 	var bdatesap = [new Date(2015, 3, 14), new Date(2015, 3, 16), new Date(2015, 3, 21), new Date(2015, 3, 23), new Date(2015, 3, 24), new Date(2015, 3, 28), new Date(2015, 3, 30)];
 
+	var adatesf = [new Date(2015, 4, 4), new Date(2015, 4, 6), new Date(2015, 4, 11), new Date(2015, 4, 13), new Date(2015, 4, 18), new Date(2015, 4, 20), new Date(2015, 4, 22), new Date(2015, 4, 27), new Date(2015, 4, 29), new Date(2015, 5, 1), new Date(2015, 5, 3), new Date(2015, 5, 5)];
+
+	var bdatesf = [new Date(2015, 4, 5), new Date(2015, 4, 7), new Date(2015, 4, 8), new Date(2015, 4, 12), new Date(2015, 4, 14), new Date(2015, 4, 15), new Date(2015, 4, 19), new Date(2015, 4, 21), new Date(2015, 4, 26), new Date(2015, 4, 28), new Date(2015, 5, 2), new Date(2015, 5, 4)]
+
 	springbreak = new Date(2015, 2, 27);
 	apday = new Date(2015, 4, 8);
+	finals = new Date(2015, 5, 5);
 
 	var adaysleft = 0;
 	for (var i = 0; i < adates.length; i++) {
@@ -64,4 +69,32 @@ window.onload = function() {
 
 	document.getElementById("totaldaysap").appendChild(
 			document.createTextNode(""+(~~((apday-now)/(60*60*24*1000)))));
+	
+	// FINALS SECTIONS
+
+	var adaysleftf = 0;
+	for (var i = 0; i < adatesf.length; i++) {
+		if (now < adatesf[i]) {
+			adaysleftf++;
+		}
+	}
+
+	var atextf = document.createTextNode(""+(adaysleft+adaysleftap+adaysleftf));
+	document.getElementById("adayf").appendChild(atextf);
+
+	var bdaysleftf = 0;
+	for (var i = 0; i < bdatesf.length; i++) {
+		if (now < bdatesf[i]) {
+			bdaysleftf++;
+		}
+	}
+
+	var btextf = document.createTextNode(""+(bdaysleft+bdaysleftap+bdaysleftf));
+	document.getElementById("bdaysf").appendChild(btextf);
+
+	document.getElementById("schooldaysf").appendChild(
+			document.createTextNode(""+(adaysleft+adaysleftap+adaysleftf+bdaysleft+bdaysleftap+bdaysleftf)));
+
+	document.getElementById("totaldaysf").appendChild(
+			document.createTextNode(""+(~~((finals-now)/(60*60*24*1000)))));
 }
