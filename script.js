@@ -40,7 +40,7 @@ window.onload = function() {
 			document.createTextNode(""+(adaysleft+bdaysleft)));
 
 	document.getElementById("totaldays").appendChild(
-			document.createTextNode(""+(~~((springbreak-now)/(60*60*24*1000)))));
+			document.createTextNode(""+((~~((springbreak-now)/(60*60*24*1000)))+1)));
 
 	// AP SECTION
 
@@ -68,7 +68,7 @@ window.onload = function() {
 			document.createTextNode(""+(adaysleft+adaysleftap+bdaysleft+bdaysleftap)));
 
 	document.getElementById("totaldaysap").appendChild(
-			document.createTextNode(""+(~~((apday-now)/(60*60*24*1000)))));
+			document.createTextNode(""+((~~((apday-now)/(60*60*24*1000)))+1)));
 	
 	// FINALS SECTIONS
 
@@ -96,5 +96,5 @@ window.onload = function() {
 			document.createTextNode(""+(adaysleft+adaysleftap+adaysleftf+bdaysleft+bdaysleftap+bdaysleftf)));
 
 	document.getElementById("totaldaysf").appendChild(
-			document.createTextNode(""+(~~((finals-now)/(60*60*24*1000)))));
+			document.createTextNode(""+((~~((finals-now)/(60*60*24*1000)))+1)));
 }
